@@ -50,7 +50,7 @@ exports.getAllAcc = catchAsync(async (req, res) => {
 exports.createAcc = catchAsync(async (req, res) => {
 
     const account = await UserAcc.create(req.body);
-    console.log(account);
+    // console.log(account);
     res.status(200).json({
         status: 'success',
         data: {
@@ -62,7 +62,7 @@ exports.createAcc = catchAsync(async (req, res) => {
 
 exports.getUser = catchAsync(async (req, res, next) => {
     let accountNo = (req.params.id)
-    console.log(accountNo);
+    // console.log(accountNo);
     if(req.user.accountNo === accountNo){
         return next(new AppError('YUP!!! This is your A/c Pls try another A/C',404))
     }
@@ -89,7 +89,7 @@ exports.updateAcc = catchAsync(async (req, res, next) => {
     const loginUserData = req.user;
     const transferData = req.transferUser;    
 
-    console.log(loginUserData,transferData);
+    // console.log(loginUserData,transferData);
 
      const now = new Date;
     const option = {
@@ -106,7 +106,7 @@ exports.updateAcc = catchAsync(async (req, res, next) => {
 
     let updateTransferAcc;
     let updateUserAcc;
-    console.log(loginUserData.totalAmt);
+    // console.log(loginUserData.totalAmt);
 
     if( amount > 0 && amount < loginUserData.totalAmt){
         let totalTransfer = 0;

@@ -22,7 +22,7 @@ const Auth = () => {
 
   const changehandler = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
-    console.log(user);
+    // console.log(user);
   }
   useEffect(() => {
     setTimeout(() => {
@@ -36,7 +36,7 @@ const Auth = () => {
       
       if(userData.status === 'success'){
         navigate('/dashBoard')
-        console.log(userData);
+        // console.log(userData);
       }else{
         let errorMessages = userData.message
         let statuss = userData.status;

@@ -7,7 +7,7 @@ export const createAcc = async(state)=>{
         .then(response =>{
             let accountNo = response.data.data.account.accountNo
             alert(`Account has been Created with ${accountNo}`)
-            console.log(response.data.data.account.accountNo)
+            // console.log(response.data.data.account.accountNo)
             return accountNo
         }).catch( err =>{
             const error = err.response.data.message

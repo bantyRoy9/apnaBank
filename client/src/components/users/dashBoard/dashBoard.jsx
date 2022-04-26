@@ -48,7 +48,7 @@ const DashBoard = () => {
       let account = res.data.data.user
       setData(account)
       // setuser(res.data.data.user)
-      console.log(res.data);
+      // console.log(res.data);
     }).catch(err => {
       console.log(err.response.data.message);
       // setuser(false)
