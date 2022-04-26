@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 app.use(express.json({ limit: '14kb' }));
-app.use(helmets());
+// app.use(helmets());
 app.use(sanitize());
 app.use(xss());
 app.use(rateLimit({
