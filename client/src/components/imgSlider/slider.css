@@ -1,0 +1,98 @@
+.card{
+    position:absolute;
+    top: 370px;
+    left: 28px;
+    width: 49.9%;
+    height: 39%;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.card1{
+    position: absolute;
+    top:370px;
+    right: 26%;
+    width: 20%;
+    height: 39%;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    
+}
+.card>p,.card1>p{
+    color: var(--color-tertiary);
+    font-size: 1.7rem;
+}
+
+.cardItem{
+    display: grid;
+    grid-template-columns: 2.1fr 2fr;
+    padding: 8px 20px;
+    gap: 12px;
+}
+.cardItem1{
+    display: flex;
+}
+.cardIcon{
+    color: var(--color-primary);
+    padding: 2px 10px;
+    height: 40%;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color:rgba(191,11,171,0.1);
+}
+.cardIcon1,.cardIcon2,.cardIcon3,.cardIcon4{
+    padding: 5px 14px;
+    align-items: center;
+    margin: auto;
+    height: 55%;
+    width: 55%;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    
+}
+.cardIcon1{
+    color: rgb(133, 133, 253);
+    background-color:rgba(40, 10, 173, 0.1);
+}
+.cardIcon2{
+    color: rgb(151, 253, 202);
+    background-color:rgba(6, 141, 47, 0.1);
+}
+.cardIcon3{
+    color: rgb(253, 133, 183);
+    background-color:rgba(141, 6, 58, 0.1);
+}
+.cardIcon4{
+    color: rgb(253, 211, 133);
+    background-color:rgba(153, 51, 4, 0.1);
+}
+.cardTitle{
+    display: flex;
+    line-height: 19px;
+    flex-direction: column;
+}
+.cardTitle p{
+    font-size: 1.1rem;
+    font-weight: 550;
+
+}
+.cardTitle span{
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.cardItem1 p:last-child{
+    color: var(--color-primary);
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+.cardItem2 p{
+    width: 550%;
+    /* margin: 20px; */
+    margin-left: -30px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
