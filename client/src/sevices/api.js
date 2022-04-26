@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const URL = 'http://localhost:8000'
+const URL = ''
+// const URL = 'http://localhost:8000'
 
 export const createAcc = async(state)=>{
         await axios.post(`${URL}/bank/v1/user`, state)

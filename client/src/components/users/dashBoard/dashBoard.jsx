@@ -11,7 +11,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 
-const URL = 'http://localhost:8000'
+// const URL = 'http://localhost:8000'
+const URL = '';
 
 
 let timer;

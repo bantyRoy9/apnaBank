@@ -7,7 +7,8 @@ import { userLogin } from './../../sevices/api'
 
 import axios from 'axios'
 
-const URL = 'http://localhost:8000'
+// const URL = 'http://localhost:8000'
+const URL = '';
 
 
 const Auth = () => {
