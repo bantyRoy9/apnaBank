@@ -1,0 +1,201 @@
+.card-container{
+    font-family: sans-serif;
+}
+.card,.card1{
+    position:absolute;
+    top: calc(100vh - 300px);
+    height: fit-content;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.card{left: 68px;    width: calc(100vw - 50vw);}
+.card1{right: 20%;    width: calc(100vw - 78vw);}
+
+.card>p,.card1>p{
+    color: var(--color-tertiary);
+    font-size: 1.5rem;
+}
+.cardItem{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* padding: 8px 20px; */
+    gap: 15px;
+}
+.cardItem1{
+    display: flex;
+    transition: all .5s;
+}
+.cardItem1:hover{
+    background-color: rgba(128, 128, 128, 0.153);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.cardIcon{
+    color: var(--color-primary);
+    padding: 2px 7px;
+    height: fit-content;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 1px;
+    background-color:rgba(191,11,171,0.1);
+}
+.card1 .cardItem{
+    gap: 30px;
+    padding: 0 10px;
+}
+.cardItem2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.cardIcona i{
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.cardItem2 h6{
+
+}
+.card1 .cardItem .cardItem2:nth-child(1) i{
+    color: rgb(133, 133, 253) !important;
+    background-color:rgba(40, 10, 173, 0.1);
+
+}
+.card1 .cardItem .cardItem2:nth-child(2) i{
+    color: rgb(151, 253, 202);
+    background-color:rgba(6, 141, 47, 0.1);
+}
+.card1 .cardItem .cardItem2:nth-child(3) i{
+    color: rgb(253, 133, 183);
+    background-color:rgba(141, 6, 58, 0.1);
+}
+.card1 .cardItem .cardItem2:nth-child(4) i{
+    color: rgb(253, 211, 133);
+    background-color:rgba(153, 51, 4, 0.1);
+}
+.cardTitle{
+    display: flex;
+    line-height: 19px;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.cardTitle h6{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 550;
+    margin-bottom: inherit !important;
+}
+.cardTitle span{
+    font-size: 13px;
+    line-height: 16px;
+    width: 100%;
+    color: rgba(0,0,0,0.5);
+}
+
+.cardItem1 p:last-child{
+    color: var(--color-primary);
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+
+@media only screen and (max-width:600px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        overflow-x:hidden;
+        overscroll-behavior: none;
+    }
+    .card,.card1{
+        position: unset;
+        /* overflow-x: hidden; */
+        width: 100vw;
+        border-radius: 20px;
+        margin: 20px;
+        /* padding: 1vmax 2vmax; */
+    }
+    .card>p,.card1>p{
+        color: var(--color-tertiary);
+        font-size: 2vmax;
+    }
+    
+    .cardItem{
+        display: grid;
+        /* flex-wrap: wrap; */
+        grid-template-columns: 2.1fr 2fr;
+        padding: 8px 20px;
+        gap: 12px;
+    }
+    .cardItem1{
+        display: flex;
+    }
+    .cardIcon{
+        color: var(--color-primary);
+        padding: 2px 10px;
+        height: 40%;
+        font-size: 1.4rem;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: 5px;
+        background-color:rgba(191,11,171,0.1);
+    }
+    .cardIcon1,.cardIcon2,.cardIcon3,.cardIcon4{
+        padding: 5px 14px;
+        align-items: center;
+        margin: auto;
+        height: 55%;
+        width: 55%;
+        border-radius: 50%;
+        font-size: 1.4rem;
+        
+    }
+    .cardIcon1{
+        color: rgb(133, 133, 253);
+        background-color:rgba(40, 10, 173, 0.1);
+    }
+    .cardIcon2{
+        color: rgb(151, 253, 202);
+        background-color:rgba(6, 141, 47, 0.1);
+    }
+    .cardIcon3{
+        color: rgb(253, 133, 183);
+        background-color:rgba(141, 6, 58, 0.1);
+    }
+    .cardIcon4{
+        color: rgb(253, 211, 133);
+        background-color:rgba(153, 51, 4, 0.1);
+    }
+    .cardTitle{
+        display: flex;
+        line-height: 19px;
+        flex-direction: column;
+    }
+    .cardTitle p{
+        font-size: 1.1rem;
+        font-weight: 550;
+    
+    }
+    .cardTitle span{
+        font-size: 1.4rem;
+        color: rgba(0,0,0,0.5);
+    }
+    
+    .cardItem1 p:last-child{
+        color: var(--color-primary);
+        margin-top: 5px;
+        font-size: 1.3rem;
+    }
+    .cardItem2 p{
+        width: 550%;
+        /* margin: 20px; */
+        margin-left: -30px;
+        margin-top: 10px;
+        /* border: 1px solid red; */
+    }
+    
+
+}

@@ -1,0 +1,207 @@
+.interest{
+    color: rgb(40, 31, 31);
+    background-color: antiquewhite;
+    margin-top: -2px;
+}
+.nav-a{
+    position: absolute;
+    left: 32%;
+    text-transform: capitalize;
+}
+.nav-a a{
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
+
+
+.interest-In{
+    /* height: fit-content; */
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    width: fit-content; 
+    margin-left: 20%;
+    padding: 0 50px;
+    text-align: center;
+    align-items: center;
+}
+.interest-In span{
+    color: var(--color-nav-text);
+    margin: 60px 20px 0px 20px  ;
+}
+.interest-In select{
+    margin: 60px 0px 0px 0px  ;
+    padding: 7px 49px 5px 10px;
+    font-size: 18px;
+    background: transparent;
+    font-weight: 700;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 2px;
+    color: #3d3d3d;
+}
+.interest-In select>option{
+    font-size: 15px;
+    border-radius: none;
+    /* background: none; */
+
+}
+
+/* .interest-In select>option:hover{
+    background: #ebe7e7;
+    cursor: pointer;
+    border: 1px solid red;
+} */
+
+
+.interest-in_data{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 30px;
+}
+.option-data{
+    background-color: rgb(247, 240, 240);
+    margin-left: -140px;
+    height: 92%;
+}
+.interest-in_data>img{
+    border-radius: 2%;
+    width: 70%;
+    height: 92%;
+    margin-left: 70px;
+}
+.option-data_nav{
+    margin: 1px 50px;
+}
+
+.nav__links img{
+    display: flex;
+    left: 9px;
+    top: -2.7px;
+    height: 38px;
+    position: relative;
+}
+.option-income{
+    margin: 20px 70px;
+    
+}
+.option-income span{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #3d3d3d;
+}
+.grid-income{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    width: 50%;
+}
+.grid-income button{
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    /* background: transparent; */
+    
+}
+.actives{
+    background-color: var(--color-primary);
+    
+}
+.option-detail{
+    margin: 20px 70px;
+
+}
+.option-detail p{
+    font-size: 20px;
+    color: #3d3d3d;
+
+}
+.option-detail ul li{
+    list-style-type:initial;
+    font-size: 14px;
+    color: var(--color-nav-text);
+    font-weight: 510;
+    margin-left: 20px;
+}
+.btn-apply{
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 10px 0px 70px;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.btn-know{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.option-para p{
+    margin: 10px 70px;
+    width: 35%;
+    line-height: 22px;
+    font-size: 15px;
+}
+.interest-In .down{
+    position: relative;
+    left: 235px;
+    top: 30px;
+}
+.interest-In .down1{
+    position: relative;
+    left: 95px;
+    top: 30px;
+}
+@media only screen and (max-width:600px) {
+ .nav-a ul{
+        display: none;
+        border: 3px solid red;
+    }
+    
+    .interest-In{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -10%;
+        /* margin-top: 40px; */
+    }
+    .interest-In span{
+        margin: 0;
+        font-weight: 500;
+        margin: 0px 2px;
+    }
+    .interest-In select{
+        margin: 0px;
+        /* padding: 0px; */
+        width: 90vw;
+        font-size: 16px;
+        font-weight: 500;
+
+        
+    }
+    .interest-In select>option{
+
+    }
+    .interest-In .down1{
+        left:290px;
+        top: 25px;
+        align-items: center;
+        
+    }
+    .interest-In .down{
+        top: 25px;
+        left:290px;
+        align-items: center;
+
+    }
+    .interest-in_data{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 2fr;
+    }
+}

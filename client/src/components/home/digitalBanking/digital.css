@@ -1,0 +1,234 @@
+.digital-container{
+    padding: 40px 70px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+@media only screen and (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    .digital-container{
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: none;
+        /* grid: reverse; */
+    }
+    .security-subhead{
+        display: flex;
+        flex-direction: column;
+    }
+    .offers{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        gap: 0;
+        margin: auto;
+        padding: auto;
+    }
+    .digital-img{
+        display: none;
+    }
+}
+.digital-head{
+    /* border: 1px solid red; */
+    
+}
+.digital-title{
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 25px;
+    /* margin-top: 10px; */
+}
+.digital-subtitle{
+    font-size: 18px;
+    font-weight: 650;
+    color:#a7a7a7;
+}
+.digital-techs{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 25px;
+}
+
+.digital-tech{
+    display: flex;
+    align-items: center;
+    padding:  1px 15px;
+    width: 35%;
+    font-size: 13px;
+    border: 1.3px solid var(--color-primary);
+    border-radius: 20px 20px 20px 20px ;
+    cursor: pointer;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+.digital-btn{
+    text-align: center;   
+    text-transform: uppercase;
+    width: fit-content;
+    margin-top: 40px;
+    
+}
+.digital-btn a{
+    border: 1px solid var(--color-primary);
+    border-radius: 35px;
+    background: var(--color-primary);
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    color:white;
+    transition: all .3s;
+}
+.digital-btn a:hover{
+    background: white;
+    color: var(--color-primary);
+}
+
+.digital-img{
+    /* border: 1px solid red; */
+}
+.digital-img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -33px;
+    margin-left: -30px;
+    animation: image 30s  infinite ;
+    background-repeat: no-repeat;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 10);
+}
+@keyframes image{
+    0%,100%{
+        background-image: url('https://www.icicibank.com/assets/images/home/net-banking.png');
+    }
+    33.333%{
+        background-image: url('https://www.icicibank.com/assets/images/home/mobile-banking.png');
+    }66.666%{
+        background-image: url('https://www.icicibank.com/assets/images/home/whatsApp-banking.png');
+    }
+}
+.circle-active{
+    height: 22px;
+    /* display: none; */
+    position: relative;
+    /* left: 20px; */
+    /* visibility: hidden; */
+    /* margin-top: 20px; */
+    /* border: 1px solid red; */
+}
+.dot-active{
+    display: none;
+}
+svg {
+    width:24px;
+    height:24px;
+    
+}
+ circle {
+        transform: rotate(-90deg);
+        transform-origin: 10% 10%;
+        stroke-dasharray: 37.68, 37.68;
+        stroke-width: 1.5;
+        fill: transparent;
+        r: 6;
+        cx: -5;
+        cy: 11;
+ }
+.fill {
+            stroke: #D3D3D3;
+        }
+
+.progress {
+            stroke: #FF6B00;
+            animation: circle 10s forwards infinite;
+
+}
+@keyframes circle {
+                0% { stroke-dashoffset: 37.68; }
+                100%   { stroke-dashoffset: 0; }
+            }
+
+
+
+.offers{
+    display: flex;
+    gap: 40px;
+    margin: 40px 70px;
+    padding: 30px 20px;
+    width: 89%;
+    /* margin-top: 80px; */
+    background: white;
+    align-items:center;
+}
+.offer-link article{
+    font-size: 14px;
+    line-height: 12px;
+}
+.offer-link a{
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.security{
+    position: relative;
+    top: -99px;
+    z-index: -1;
+    padding: 10px 90px;
+    background:#fff7eb;
+}
+.security-head{
+    padding: 110px 0px 0px 0px ;
+}
+.security-head{
+    font-size: 25px;
+    line-height: 110%;
+    font-weight: 300;
+}
+.security-subhead{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+.security-subhead>div:not(:last-child){
+    border-right: 1px solid #a7a7a7;
+    padding: 0 10px;
+}
+.security-subhead>div{
+    /* width: 80%; */
+    display: flex;
+    margin: 20px;
+    line-height: 20px;
+    align-items: center;    
+}
+.security-subhead>div>img{
+    padding: 10px;
+    /* width: 25%; */
+}
+.covid-notice{
+    position: relative;
+    top: -100px;
+    background: #074a86;
+    width: 100%;
+    padding: 20px 70px;
+    text-align: center;
+
+}
+.covid-notice a{
+    color: white;
+    font-size: 14px;
+}
+.covid-notice a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,326 @@
+.dash_container{
+    display: grid;
+    grid-template-columns: 1.5fr 8fr;
+    height:80vh;
+    border: 1.5px solid rgb(0, 0, 0,.3);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0,.9);
+    margin: 20px 10px -100px 20px;
+}
+.dash_container-left{
+    height: 100%;
+    border-radius: 5px;
+    width: 110%;
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+}
+
+.dash_container-right{
+    margin: 30px 30px 10px 60px;
+}
+
+.transferbtn{
+    position: absolute;
+    margin-top: 40px;
+    right: 50px;
+}
+
+
+
+
+.transferContainer{
+    position: absolute;
+    width: max-content;
+    top: 30%;
+    left: 24%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: max-content;
+    height: 48%;
+    border: 1px solid rgb(0, 0, 0,.3);
+}
+.close{
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    right: 4%;
+    top: 5%;
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: all .3s;
+}
+.transferData i:hover{
+    color: var(--color-tertiary);
+    transform:rotate(90deg);
+}
+.transferData h3{
+    margin-top: 20px;
+    margin-left: 450px;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+.transferData span{
+    color: var(--color-tertiary);
+
+}
+.transferForm{
+    display: flex;
+    /* margin: 40px; */
+}
+.transferbtns{
+    position: absolute;
+    bottom: 14%;
+    left: 39%;
+}
+.formData{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.formData label{
+    font-size: 1.3rem;
+    color: var(--color-tertiary);
+    font-weight: 550;
+    margin-left: -65%;
+
+}
+.formData input{
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: auto;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    font-size: 1.7rem;
+    color: var(--color-tertiary);
+}
+
+.formData hr{
+    color: var(--color-tertiary);
+    height: 1px;
+    width: 80%;
+    background-color: var(--color-tertiary);
+}
+
+
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    /* background: red; */
+    gap: 1;
+    grid-template-columns: 15rem auto;
+  }
+  aside{
+    height: 100vh;
+    /* background: gray; */
+    /* position: fixed; */
+  }
+  aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+  }
+  aside .logo{
+    display: flex;
+    gap: 0.8rem;
+  }
+  aside .close{
+    display: none;
+  }
+  
+  /* *******SideBar****** */
+  
+  aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+    
+  }
+  aside .sidebar h3{
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    margin-top: 10px;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+  }
+  aside .sidebar a i{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+  }
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 1005;
+  }
+  
+  aside .sidebar a.active{
+    background: var(--color-light);
+    color: var(--color-primary1);
+    margin-left: 0;
+  }
+  aside .sidebar a.active:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary1);
+  }
+  aside .sidebar a.active i{
+    color: var(--color-primary1);
+    margin-left: calc(1rem-3px);
+  }
+  aside .sidebar a:hover{
+    color: var(--color-primary1);
+  }
+  
+  aside .sidebar a:hover i{
+    margin-left: 1rem;
+  }
+  
+  aside .sidebar .message-count{
+    background: var(--color-danger);
+    color: var(--color-white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--board-radius-1);
+  }
+  
+  
+  main{
+    margin-top: 1.4rem;
+  
+  }
+  main .date{
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--board-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
+  
+  main .date input[type="date"]{
+    background: transparent;
+    color: var(--color-dark);
+  }
+  
+  main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+  main .insights > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+  }
+  
+  main .insights> div:hover{
+    box-shadow: none;
+  }
+  main .insights > div i{
+    background: var(--color-primary1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+  }
+  main .insights >div.expenses i{
+    background: var(--color-danger);
+  }
+  main .insights > div.income i{
+    background: var(--color-danger);
+  }
+  
+  main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .insights h3{
+    margin:  1rem 0 0.6rem;
+    font-size: 1.7rem;
+  }
+  main .insights .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+  }
+  main .insights svg{
+    width: 9rem;
+    height: 9rem;
+  }
+  main .insights svg circle{
+    fill: none;
+    stroke: var(--color-primary1);
+    stroke-width: 14;
+    stroke-linecap:round;
+    transform: translate(5px , 5px);
+    stroke-dasharray: 290;
+    stroke-dashoffset: 92;
+  }
+  main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+  }
+  main .insights .expenses svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+  }
+  main .insights .income svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+  }
+  .recent-transaction{
+    margin-top: 2rem;
+  }
+  .recent-transaction h2{
+    font-size: 1.8rem;
+  }
+  .recent-transaction table{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    width: 100%;
+    text-align: center;
+  }
+  .recent-transaction table:hover{
+    box-shadow: none;
+  }
+  .recent-transaction table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light) ;
+    color: var(--color-dark-variant);
+  }
+  .recent-transaction table tbody tr:last-child td {
+    border: none;
+  }
+  .recent-transaction a{
+    text-align: center;
+    color: var(--color-primary1);
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+  }
+  

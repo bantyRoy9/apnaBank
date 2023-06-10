@@ -1,0 +1,11 @@
+.blog{
+    background: inherit;
+    margin: 0;
+}
+@media only screen and (max-width:600px) {
+     .trending-offer{
+         display: flex;
+         flex-direction: column;
+         overflow-x: scroll;
+     }
+}
