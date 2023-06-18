@@ -84,9 +84,9 @@ const Auth = () => {
               {!navToggle && !navToggle1 ?
                 <>
                   {/* <i className='fa-solid fa-bars' onClick={()=>setNavToggle1('show-nav2')}></i> */}
-                  <img src='/assests/logo1.png' alt="apnaBank logo" className="nav__logo" />
+                  <img src='/assests/logo.png' alt="apnaBank logo" className="nav__logo" />
                 </> : <>
-                  <img src='/assests/logo1.png' alt="apnaBank logo" className="nav__logo" />
+                  <img src='/assests/logo.png' alt="apnaBank logo" className="nav__logo" />
 
                 </>
               }

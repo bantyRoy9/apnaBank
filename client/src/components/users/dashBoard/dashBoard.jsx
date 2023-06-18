@@ -153,25 +153,25 @@ const DashBoard = () => {
                   </div>
                 </div>
                 <div className="sidebar">
-                  <NavLink to={' '} onClick={() => setcount(1)} className="active"><i class="fa-solid fa-list-ul"></i><h3>DashBoard</h3></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(1)} className="active"><i className="fa-solid fa-list-ul"></i><h3>DashBoard</h3></NavLink>
 
 
-                  <NavLink to={' '} onClick={() => setcount(2)} className="activ"><i class="fa-solid fa-wallet"></i><h3>Wallet</h3></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(2)} className="activ"><i className="fa-solid fa-wallet"></i><h3>Wallet</h3></NavLink>
 
 
-                  <NavLink to={' '} onClick={() => setcount(3)}><i class="fa-solid fa-money-bill-transfer"></i><h3>Transection</h3></NavLink>
-                  <NavLink to={' '} onClick={() => setcount(3)}><i class="fa-solid fa-money-bill-transfer"></i><h3>Message</h3> <span className="message-count">12</span></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(3)}><i className="fa-solid fa-money-bill-transfer"></i><h3>Transection</h3></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(3)}><i className="fa-solid fa-money-bill-transfer"></i><h3>Message</h3> <span className="message-count">12</span></NavLink>
 
 
-                  <NavLink to={' '} onClick={() => setcount(4)}><i class="fa-solid fa-hand-holding-dollar"></i><h3>Request Loan</h3></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(4)}><i className="fa-solid fa-hand-holding-dollar"></i><h3>Request Loan</h3></NavLink>
 
 
-                  <NavLink to={' '} onClick={() => setcount(5)}><i class="fa-solid fa-user"></i><h3>Profile</h3></NavLink>
+                  <NavLink to={' '} onClick={() => setcount(5)}><i className="fa-solid fa-user"></i><h3>Profile</h3></NavLink>
 
 
 
 
-                  <NavLink to={'/login'} onClick={signout} className='logout'><i class="fa-solid fa-arrow-right-from-bracket"></i> <h3> LogOut</h3> </NavLink>
+                  <NavLink to={'/login'} onClick={signout} className='logout'><i className="fa-solid fa-arrow-right-from-bracket"></i> <h3> LogOut</h3> </NavLink>
 
 
                 </div>

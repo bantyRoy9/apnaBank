@@ -8,14 +8,14 @@ export const hideAlert =()=>{
 
 export const showAlert = (type,msg)=>{
     hideAlert();
-    const markup = `<div class="alert alert--${type}">${msg}</div>`;
+    const markup = `<div className="alert alert--${type}">${msg}</div>`;
     document.querySelector('body').insertAdjacentHTML('afterbegin',markup)
     window.setTimeout(hideAlert,5000);
 };
 
 export const transferAlert= (type,msg,amt)=>{
     hideAlert()
-    const success = `<div class = "alert alert--${type}">${msg} &rarr; ${amt}</div>`
+    const success = `<div className = "alert alert--${type}">${msg} &rarr; ${amt}</div>`
     document.querySelector('body').insertAdjacentHTML('afterbegin',success)
     window.setTimeout(hideAlert,4000)
 }
@@ -23,10 +23,10 @@ export const transferAlert= (type,msg,amt)=>{
 export const loader = () =>{
     hideAlert();
     const loa = `
-    <div class = "loading">
-        <div class= "ball"></div>
-        <div class= "ball"></div>
-        <div class = "ball"></div>
+    <div className = "loading">
+        <div className= "ball"></div>
+        <div className= "ball"></div>
+        <div className = "ball"></div>
         <span>Loading... </span>
     </div> 
     `

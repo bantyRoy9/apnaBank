@@ -1,14 +1,21 @@
 import { NavLink } from 'react-router-dom'
-import React from 'react'
+import React, { useState } from 'react'
 import './section.css'
 import { useRef } from 'react'
 import SelectPicker from '../../SelectPicker/SelectPicker'
 
-const selectOpt = [{ value: 'chocolate', label: 'Chocolate' },
-{ value: 'strawberry', label: 'Strawberry' },
-{ value: 'vanilla', label: 'Vanilla' }]
+const selectOpt = [
+    { value: 'Select', label: 'Select' },
+    { value: 'Cards', label: 'Cards' },
+    { value: 'Deposits', label: 'Deposits' }
+]
+const selectOptFor =[
+    {value:'Benifits and Rewards',label:'Benifits and Rewards'}
+]
 
 const Section = () => {
+    const [defaultValue,setDefaultValue] = useState({ value: 'Cards', label: 'Cards' })
+    const [defaultValueFor,setDefaultValueFor] = useState({value:'Benifits and Rewards',label:'Benifits and Rewards'})
 
     const navRef = useRef(null);
     // navRef.current
@@ -16,43 +23,40 @@ const Section = () => {
         <>
             <div className='interest'>
                 <div className="nav-a">
-                    <ul className="nav__links nav-links-res">
-                        {/* <img src='/assests/active-left.png' alt="" /> */}
-                        <li className="nav__items">
-                            <NavLink to="/" className="nav__link active">FIND THE RIGHT PRODUCT FOR YOU</NavLink>
+                    <ul className="nav-links-res nav-tabs ">
+                        <li className='active'>
+                            <NavLink to="" className="nav__link">FIND THE RIGHT PRODUCT FOR YOU</NavLink>
                         </li>
-                        <li className="nav__items">
+                        <li>
                             <NavLink className="nav__link" to="/oprations" style={{ color: '#3d3d3d', background: '#ebe7e7' }}>LIFE STAGE SOLUTION</NavLink>
                         </li>
-                        {/* <img src="assests/normal-left.png" alt="" style={{ marginLeft: '-11px', transform: 'scaleX(-1)' }} /> */}
                     </ul>
                 </div>
                 <div className="interest-In">
-                    <div className="col-md-8 row">
-                        <div className="col-md-5 ">
-                            <span className=''>I am interested in:</span>
-                            <SelectPicker options={selectOpt} label=''/>
+                    <div className="row col-md-7">
+                        <div className="col-md-6 row align-items-center">
+                            <div className='col-md-6'>
+                                <span className='spanText'>I am interested in:</span>
+                            </div>
+                            <div className='col-md-6'>
+                                <SelectPicker options={selectOpt} label=''  
+                                defaultValue={defaultValue} 
+                                />
+                            </div>
                         </div>
-                        <div className="col-md-5">
-                            <span className=''>I am interested in:</span>
-                            <SelectPicker options={selectOpt} label=''/>
+                        <div className="col-md-6 row align-items-center">
+                            <div className="col-md-2 text-center">
+                             <span className='spanText'>For</span>
+                            </div>
+                            <div className="col-md-8">
+                            <SelectPicker
+                                defaultValue={defaultValueFor} 
+                                options={selectOptFor} 
+                                label=''
+                            />
+                            </div>
                         </div>
-                        {/* <label htmlFor="" className=''></label> */}
                     </div>
-                    {/* <i className='fa-solid fa-caret-down down1'></i>
-                    <select className='selectOption' >
-                        <option value="card">Card</option>
-                        <option value="card">for</option>
-                        <option value="card">you</option>
-                    </select> <span> for</span>
-                    <i className='fa-solid fa-caret-down down'></i>
-
-                    <select className='selectOption'>
-                        <option value="Benifits">Benifits and Rewards</option>
-                        <option value="Benifits">Benifits and Rewards</option>
-                        <option value="Benifits">Benifits and Rewards</option>
-                    </select> */}
-
                 </div>
 
                 <div className="interest-in_data">

@@ -51,7 +51,7 @@ const Dashwel = (props) => {
             </div>
             <div className="insights">
                 <div className="salses">
-                    <i class="fa-solid fa-chart-simple"></i>
+                    <i className="fa-solid fa-chart-simple"></i>
                     <div className="middle">
                         <div className="left">
                             <h3>Total Transaction</h3>
@@ -70,7 +70,7 @@ const Dashwel = (props) => {
                 </div>
 
                 <div className="expenses">
-                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <i className="fa-solid fa-square-poll-vertical"></i>
 
                     <div className="middle">
                         <div className="left">
@@ -91,7 +91,7 @@ const Dashwel = (props) => {
                 </div>
 
                 <div className="income">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <i className="fa-solid fa-arrow-trend-up"></i>
                     <div className="middle">
                         <div className="left">
                             <h3>Total Deposit</h3>

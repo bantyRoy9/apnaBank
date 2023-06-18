@@ -20,8 +20,8 @@ const Digital = () => {
                                 <span className="dot dot-active"></span>
                                 <span className="circle-active" style={active}>
                                     <svg>
-                                        <circle class="fill"></circle>
-                                        <circle class="progress"></circle>
+                                        <circle className="fill"></circle>
+                                        <circle className="progress"></circle>
                                     </svg>
                                 </span>
                                 Mobile Bannking
@@ -30,8 +30,8 @@ const Digital = () => {
                                 <span className="dot dot-active"></span>
                                 <span className="circle-active">
                                     <svg>
-                                        <circle class="fill"></circle>
-                                        <circle class="progress"></circle>
+                                        <circle className="fill"></circle>
+                                        <circle className="progress"></circle>
                                     </svg>
                                 </span>
                                 Net Bannking
@@ -40,8 +40,8 @@ const Digital = () => {
                                 <span className="dot dot-active"></span>
                                 <span className="circle-active">
                                     <svg>
-                                        <circle class="fill"></circle>
-                                        <circle class="progress"></circle>
+                                        <circle className="fill"></circle>
+                                        <circle className="progress"></circle>
                                     </svg>
                                 </span>
                                 WhatsApp Bannking

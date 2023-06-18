@@ -7,7 +7,7 @@ const Nav = (props) => {
   const [navToggle, setNavToggle] = useState('')
   const [navToggle1, setNavToggle1] = useState('')
   window.onscroll = function () {
-    if (window.pageYOffset > 450) {
+    if (window.pageYOffset >= 300) {
       setSticky('sticky')
     } else {
       setSticky('');
@@ -24,15 +24,15 @@ const Nav = (props) => {
           <div className='left-icon-res'>
             {!navToggle && !navToggle1 ?
               <><i className='fa-solid fa-bars' onClick={() => setNavToggle1('nav-2-view')}></i>
-                <img src='/assests/logo1.png' alt="apnaBank logo" className="nav__logo" />
-              </> : <><img src='/assests/logo1.png' alt="apnaBank logo" className="nav__logo" /></>
+                <img src='/assests/logo.png' alt="apnaBank logo" className="nav__logo" />
+              </> : <><img src='/assests/logo.png' alt="apnaBank logo" className="nav__logo" /></>
             }
           </div>
           <div className='right-icon-res'>
             {!navToggle && !navToggle1 ?
               <>
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-solid fa-user" onClick={navhandler}></i>
+                <i className="fa-solid fa-bell"></i>
+                <i className="fa-solid fa-user" onClick={navhandler}></i>
               </> : <>
                 <i className='fa-solid fa-multiply' onClick={() => { setNavToggle(''); setNavToggle1('') }}></i>
               </>
@@ -42,8 +42,8 @@ const Nav = (props) => {
         </div>
         <div className={`header ${navToggle}`}>
           <nav className="nav">
-            <img src='/assests/logo1.png' alt="apnaBank logo" className="nav__logo" />
-            <ul className="nav__links">
+            <img src='/assests/logo.png' alt="apnaBank logo" className="nav__logo" />
+            <ul className="nav__links nav-tabs">
               {/* <img src="https://www.icicibank.com/assets/images/icons/active-left.png" alt="" /> */}
 
               <li className="header__nav-item"><NavLink to="/" className="nav__link">Home</NavLink></li>

@@ -76,7 +76,7 @@ const Signup = () => {
           </li>
           <li className="nav2__item">
             <NavLink className="auth__nav2-link-last" to="/"
-            ><i class="fa-light fa-mobile-notch"></i>Mobile Banking</NavLink>
+            ><i className="fa-light fa-mobile-notch"></i>Mobile Banking</NavLink>
           </li>
         </ul>
       </nav>

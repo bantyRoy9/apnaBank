@@ -1,12 +1,15 @@
 import React from 'react'
 import Select from 'react-select'
-function SelectPicker({
-options,label
-}) {
+import { singleSelectorStyle } from './SelectPickerStyle'
+const SelectPicker=({ options,label,defaultValue }) =>{
   return (
     <>
     {/* <label>{label}</label> */}
-    <Select options={options}></Select>
+    <Select 
+      defaultValue={defaultValue}
+      options={options}
+      styles={singleSelectorStyle}
+    />
     </>
   )
 }
