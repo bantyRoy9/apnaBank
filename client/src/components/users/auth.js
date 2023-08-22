@@ -5,9 +5,9 @@ import { userLogin } from './../../sevices/api'
 
 import axios from 'axios'
 import { loader, showAlert } from '../alert/Alert'
+import { properties } from '../../properties'
 
- const URL = 'https://apnabank-jybu.onrender.com'
-//const URL = '';
+const URL = properties.URL;
 
 
 const Auth = () => {
@@ -94,8 +94,8 @@ const Auth = () => {
             <div className='right-icon-res'>
               {!navToggle && !navToggle1 ?
                 <>
-                  <i class="fa-solid fa-bell"></i>
-                  <i class="fa-solid fa-user" onClick={() => setNavToggle('show-auth-nav')}></i>
+                  <i className="fa-solid fa-bell"></i>
+                  <i className="fa-solid fa-user" onClick={() => setNavToggle('show-auth-nav')}></i>
                 </> : <>
                   <i className='fa-solid fa-multiply' onClick={() => { setNavToggle(''); setNavToggle1('') }}></i>
                 </>
@@ -142,7 +142,7 @@ const Auth = () => {
               </li>
               <li className="nav2__item">
                 <NavLink className="auth__nav2-link-last" to="/"
-                ><i class="fa-light fa-mobile-notch"></i>Mobile Banking</NavLink>
+                ><i className="fa-light fa-mobile-notch"></i>Mobile Banking</NavLink>
               </li>
             </ul>
           </nav>
@@ -150,7 +150,7 @@ const Auth = () => {
             <div className="form-container">
               {error && <div className='errorLoading'>
                 <div className='errorData'>
-                  <i class="fa-solid fa-circle-exclamation"></i> <span>{errors[0]}</span>
+                  <i className="fa-solid fa-circle-exclamation"></i> <span>{errors[0]}</span>
                 </div>
               </div>}
               <h2 className="log-title"><i className='fa-solid fa-user-lock'></i> Login to Internet Banking</h2>

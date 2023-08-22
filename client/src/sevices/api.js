@@ -1,15 +1,13 @@
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
-// import ShowAlert from './../../utitlity/ShowAlert'
-
+import { properties } from '../properties'
 
 // const URL = ''
 // const URL = 'https://apnabank-uv68.onrender.com'
 
 export const createAcc = async(state)=>{
 
-        await axios.post(`/bank/v1/user`, state)
+        await axios.post(`${properties.URL}/bank/v1/user`, state)
         .then(response =>{
             let accountNo = response.data.data.account.accountNo
             alert(`Account has been Created with ${accountNo}`)
@@ -17,7 +15,7 @@ export const createAcc = async(state)=>{
             // console.log(response.data.data.account.accountNo)
             return accountNo
         }).catch( err =>{
-            const error = err.response.data.message
+            const error = err.response?.data.message
             alert(error)
         //    return new ShowAlert(error,400)
 
@@ -25,9 +23,8 @@ export const createAcc = async(state)=>{
 }
 
 export const userLogin = async(user)=>{
-    console.log(user,URL)
     try{
-        const userData = await axios.post(`/bank/v1/user/signIn`,user);
+        const userData = await axios.post(`${properties.URL}/bank/v1/user/signIn`,user);
         const datauser = userData.data
         console.log(userData);
         axios.defaults.headers.common.Authorization = `Bearer ${datauser.token}`;

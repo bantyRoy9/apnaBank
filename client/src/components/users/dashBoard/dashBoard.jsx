@@ -11,9 +11,9 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 import { transferAlert, showAlert, loader } from '../../alert/Alert'
+import { properties } from '../../../properties'
 
-const URL = 'https://apnabank-jybu.onrender.com'
-// const URL = '';
+const URL = properties.URL;
 
 
 let timer;
