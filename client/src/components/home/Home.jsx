@@ -18,7 +18,7 @@ const Home = () => {
     <Section/>
     <Rate />
     <Digital/>
-    <TrendingDeal/>
+    {/* <TrendingDeal/> */}
     <Blog />
     <Footer />
     </>
